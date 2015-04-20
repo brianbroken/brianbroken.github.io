@@ -1,16 +1,10 @@
 ---
-layout: Website performance
+layout: post
 title: You're up and running!
 ---
 
-We have recently been doing some work on website performance. Here is a short list of useful tools and websites to test your website performance:
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
-##Google page Speed
-
-Google page Speed is an extremely useful tool to identity gaps in the performance of your website. It will advise you on how to optimise your site performance and best practices.
-
-## Y-Slow
-
-Y-slow is a plugin that you can combine with Firefbug to test and analyse your website. It will suggest ways to improve performance and will give you an idea of what java Script libraries or style sheets are weighing down your site giving you an overall score to improve on.
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
