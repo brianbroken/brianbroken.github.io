@@ -54,15 +54,15 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h3 {
   font-size: 20px;
 }
 
-h4 {
+h3 {
   font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
   color: $gray;
 }
 
@@ -144,6 +144,25 @@ img {
     clear: both;
 }
 
+//
+// Helpers
+//
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+
+.highlight {
+  font-size: .9em;
+}
+
+
+
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -218,7 +237,8 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 14px;
+
 
   @include mobile {
     float: none;
@@ -229,16 +249,24 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $linkColor;
+    color: #000;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    padding: 8px;
+
 
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
+    }
+
+     &.active {
+      background-color: #158a97;
+      color: $white;
+      border-radius: 3px;
     }
   }
 }
@@ -313,12 +341,12 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  color: #676765;
+
+  a {
     color: #676765;
+  }
 }
-
-
-
-
 
 .visually-hidden {
     border: 0 none;
